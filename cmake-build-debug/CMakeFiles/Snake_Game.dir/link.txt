@@ -1,1 +1,1 @@
-/usr/bin/c++  -g   CMakeFiles/Snake_Game.dir/main.cpp.o  -o Snake_Game 
+/usr/bin/c++  -g   CMakeFiles/Snake_Game.dir/main.cpp.o  -o Snake_Game  -lglut -lGLU -lGL 

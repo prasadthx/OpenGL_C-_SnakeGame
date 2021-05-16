@@ -1,6 +1,19 @@
 #include <iostream>
+#include <GL/gl.h>
+#include <GL/glut.h>
 
-int main() {
-    std::cout << "Hello, World!" << std::endl;
+void displayCallback();
+
+int main(int argc, char **argv) {
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_RGB | GLUT_DOUBLE);
+    glutInitWindowSize(500, 500);
+    glutCreateWindow("SNAKE GAME");
+    glutDisplayFunc(displayCallback);
+    glutMainLoop();
     return 0;
+}
+
+void displayCallback(){
+    glutSwapBuffers();
 }
