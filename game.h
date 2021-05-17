@@ -10,6 +10,8 @@
 #define LEFT 3
 #define RIGHT 4
 
+#define MAX 60
+
 void initGrid(int, int);
 void drawGrid();
 void drawSnake();

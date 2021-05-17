@@ -8,8 +8,11 @@
 
 #define FPS 5
 
+using namespace std;
+
 extern short snakeDirection;
 bool gameOver = false;
+int score = 0;
 
 void displayCallback();
 
@@ -45,6 +48,7 @@ void displayCallback(){
     drawFood();
     glutSwapBuffers();
     if(gameOver){
+        cout << "The score is: " << score <<endl;
         exit(0);
     }
 }
