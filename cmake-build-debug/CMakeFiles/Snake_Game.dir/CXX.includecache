@@ -6,3 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/home/prasad/Desktop/OpenGL/Snake Game/game.cpp
+GL/gl.h
+-
+GL/glut.h
+-
+game.h
+/home/prasad/Desktop/OpenGL/Snake Game/game.h
+
+/home/prasad/Desktop/OpenGL/Snake Game/game.h
+

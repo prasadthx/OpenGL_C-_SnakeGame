@@ -7,6 +7,6 @@ set(OpenGlLinkers -lglut -lGLU -lGL) # setting all the Glut libraries as one var
 
 include_directories(GL)
 
-add_executable(Snake_Game main.cpp)
+add_executable(Snake_Game main.cpp game.cpp game.h)
 
 target_link_libraries(Snake_Game ${OpenGlLinkers})

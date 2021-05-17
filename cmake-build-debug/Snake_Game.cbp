@@ -84,6 +84,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/prasad/Desktop/OpenGL/Snake Game/game.cpp">
+			<Option target="Snake_Game"/>
+		</Unit>
+		<Unit filename="/home/prasad/Desktop/OpenGL/Snake Game/game.h">
+			<Option target="Snake_Game"/>
+		</Unit>
 		<Unit filename="/home/prasad/Desktop/OpenGL/Snake Game/main.cpp">
 			<Option target="Snake_Game"/>
 		</Unit>
