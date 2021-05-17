@@ -5,10 +5,17 @@
 #include <GL/gl.h>
 #include <GL/glut.h>
 #include "game.h"
+#include <ctime>
 
 int gridX, gridY;
 
+bool food = true;
+
+int foodX, foodY;
+
 short snakeDirection = RIGHT;
+
+extern bool gameOver;
 
 int positionX = 20, positionY = 20;
 
@@ -46,6 +53,15 @@ void unit(int x, int y){
     glEnd();
 }
 
+void drawFood(){
+    if(food){
+        random(foodX, foodY);
+    }
+    food = false;
+    glColor3f(1.0, 0.0, 0.0);
+    glRectf(foodX, foodY, foodX+1, foodY+1);
+}
+
 void drawSnake(){
     if(snakeDirection == UP){
         positionY++;
@@ -60,6 +76,22 @@ void drawSnake(){
         positionX--;
     }
     glRectd(positionX, positionY, positionX + 1, positionY + 1);
+    if(positionX == gridX-1 || positionX == 0 || positionY==0 || positionY==gridY-1){
+        gameOver = true;
+    }
+
+    if(positionX==foodX && positionY==foodY){
+        food = true;
+    }
+}
+
+void random(int &x, int &y){
+    int max_X = gridX - 2;
+    int max_Y = gridY - 2;
+    int min = 1;
+    srand(time(NULL));
+    x = min + rand() % (max_X - min);
+    y = min + rand() % (max_Y - min);
 }
 
 

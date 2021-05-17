@@ -9,6 +9,7 @@
 #define FPS 5
 
 extern short snakeDirection;
+bool gameOver = false;
 
 void displayCallback();
 
@@ -41,7 +42,11 @@ void displayCallback(){
     glClear(GL_COLOR_BUFFER_BIT);
     drawGrid();
     drawSnake();
+    drawFood();
     glutSwapBuffers();
+    if(gameOver){
+        exit(0);
+    }
 }
 
 void reshapeCallback(int width, int height){

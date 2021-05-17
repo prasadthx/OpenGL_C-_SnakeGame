@@ -13,16 +13,8 @@ GL/glut.h
 -
 game.h
 /home/prasad/Desktop/OpenGL/Snake Game/game.h
+ctime
+-
 
-/home/prasad/Desktop/OpenGL/Snake Game/game.h
-
-/home/prasad/Desktop/OpenGL/Snake Game/main.cpp
-iostream
--
-GL/gl.h
--
-GL/glut.h
--
-game.h
 /home/prasad/Desktop/OpenGL/Snake Game/game.h
 
